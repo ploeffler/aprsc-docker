@@ -8,7 +8,7 @@ This image is based on debian bookworm slim.
 ```shell
 
 cd ~
-git glone https://github.com/ploeffler/aprsc-docker
+git clone https://github.com/ploeffler/aprsc-docker
 cd aprsc-docker
 
 ```
