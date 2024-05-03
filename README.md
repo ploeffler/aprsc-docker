@@ -46,7 +46,7 @@ After the needed changes in your configuration, you can start the Docker-contain
 
 ```shell
 sudo docker build -t aprsc .
-sudo docker run --name aprsc --network host -d --restart unless-stopped -v $(pwd)/config:/opt/aprsc/config -dt aprsc '/opt/aprsc/sbin/aprsc' '-c' '/opt/aprsc/config/aprsc.conf' 
+sudo docker run --name aprsc --network host -d --restart unless-stopped -v $(pwd)/config:/opt/aprsc/config -dt aprsc '/opt/aprsc/sbin/aprsc' '-c' '/opt/aprsc/config/aprsc.conf' '-u' 'aprscuser'
 ```
 
 ## Port description
